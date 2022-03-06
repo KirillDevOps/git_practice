@@ -1,2 +1,3 @@
 FROM tomcat
-RUN cp -a ./html/* /var/www/html 
+RUN rm -r /var/www/html
+RUN cp -a ./html /var/www/
